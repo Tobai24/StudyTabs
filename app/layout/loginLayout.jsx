@@ -15,14 +15,14 @@ const SignInPage = () => {
         width: "80%",
         height: "100vh",
         margin: "0 auto",
-        gap: "10px",
+        gap: "30px",
       }}
     >
       <ThemeProvider theme={Theme}>
         <Box sx={{ flex: 1 }}>
           <Content />
         </Box>
-        <Box sx={{ flex: 1 }}>
+        <Box sx={{ flex: 1, maxWidth: "430px" }}>
           <SignIn />
         </Box>
       </ThemeProvider>

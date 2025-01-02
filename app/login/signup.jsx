@@ -21,6 +21,7 @@ const SignUp = () => {
         width: "40%",
         margin: "20px auto",
         height: "100vh",
+        maxWidth: "430px",
       }}
     >
       <Card
