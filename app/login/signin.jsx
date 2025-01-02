@@ -10,8 +10,9 @@ import {
   Divider,
   Link,
 } from "@mui/material";
-import GoogleIcon from "@mui/icons-material/Google"; // Example icons
+import GoogleIcon from "@mui/icons-material/Google";
 import FacebookIcon from "@mui/icons-material/Facebook";
+import { Link as RouterLink } from "react-router-dom";
 
 const SignIn = () => {
   return (
@@ -48,12 +49,13 @@ const SignIn = () => {
           size="medium"
           sx={{ padding: "15px", marginBottom: "16px" }}
           disableRipple
+          disableElevation
         >
           Sign in
         </Button>
         <Typography variant="body2" gutterBottom sx={{ textAlign: "center" }}>
           Don&apos;t have an account?{" "}
-          <Link href="/signup" variant="body2">
+          <Link to="/signup" variant="body2" component={RouterLink}>
             Sign up
           </Link>
         </Typography>

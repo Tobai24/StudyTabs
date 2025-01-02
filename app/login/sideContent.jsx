@@ -6,7 +6,6 @@ import CalendarTodayOutlinedIcon from "@mui/icons-material/CalendarTodayOutlined
 import AccessTimeOutlinedIcon from "@mui/icons-material/AccessTimeOutlined";
 import InsertChartOutlinedIcon from "@mui/icons-material/InsertChartOutlined";
 import AlarmOutlinedIcon from "@mui/icons-material/AlarmOutlined";
-import BookOutlinedIcon from "@mui/icons-material/BookOutlined";
 
 const items = [
   {
@@ -33,12 +32,6 @@ const items = [
     description:
       "Set up personalized reminders to keep you on track, ensuring you never miss a study session or revision time.",
   },
-  {
-    icon: <BookOutlinedIcon sx={{ color: "text.secondary" }} />,
-    title: "Integrated Learning Resources",
-    description:
-      "Automatically sync your timetable with study materials, lectures, and notes for a seamless learning experience.",
-  },
 ];
 
 export default function Content() {
@@ -49,7 +42,7 @@ export default function Content() {
         sx={{
           fontWeight: "medium",
           fontStyle: "italic",
-          color: "secondary.main",
+          color: "grey",
         }}
       >
         StudyTabs

@@ -2,8 +2,10 @@ import Content from "../login/sideContent";
 import { Box, ThemeProvider } from "@mui/material";
 import { Theme } from "./theme.jsx";
 import SignIn from "../login/signin.jsx";
+import SignUp from "../login/signup.jsx";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-const LoginLayout = () => {
+const SignInPage = () => {
   return (
     <Box
       sx={{
@@ -25,6 +27,25 @@ const LoginLayout = () => {
         </Box>
       </ThemeProvider>
     </Box>
+  );
+};
+
+const LoginLayout = () => {
+  return (
+    <Router>
+      <Routes path="/">
+        <Route path="/" />
+        <Route path="/signin" element={<SignInPage />} />
+        <Route
+          path="/signup"
+          element={
+            <ThemeProvider theme={Theme}>
+              <SignUp />
+            </ThemeProvider>
+          }
+        />
+      </Routes>
+    </Router>
   );
 };
 
