@@ -34,7 +34,7 @@ const LoginLayout = () => {
   return (
     <Router>
       <Routes path="/">
-        <Route path="/" />
+        <Route path="/" element={<SignInPage />} />
         <Route path="/signin" element={<SignInPage />} />
         <Route
           path="/signup"
