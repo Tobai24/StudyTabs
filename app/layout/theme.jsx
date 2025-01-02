@@ -1,14 +1,14 @@
 import { createTheme, colors } from "@mui/material";
 
-const theme = createTheme({
+const Theme = createTheme({
   palette: {
     primary: {
-      main: colors.blueGrey["A200"],
+      main: colors.blueGrey[500],
     },
-    secondary: {
-      main: colors.grey[600],
-    },
+  },
+  typography: {
+    fontFamily: "'LXGW WenKai TC', 'Roboto', 'Helvetica', 'Arial', sans-serif",
   },
 });
 
-export { theme };
+export { Theme };
