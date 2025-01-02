@@ -18,10 +18,10 @@ const SignUp = () => {
   return (
     <Box
       sx={{
-        width: "40%",
+        maxWidth: "430px",
         margin: "20px auto",
         height: "100vh",
-        maxWidth: "430px",
+        padding: "10px",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
