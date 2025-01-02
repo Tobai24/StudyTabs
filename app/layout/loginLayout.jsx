@@ -16,10 +16,20 @@ const SignInPage = () => {
         height: "100vh",
         margin: "0 auto",
         gap: "30px",
+        maxWidth: "1000px",
       }}
     >
       <ThemeProvider theme={Theme}>
-        <Box sx={{ flex: 1 }}>
+        <Box
+          sx={{
+            flex: 1,
+            display: {
+              xs: "none",
+              sm: "none",
+              lg: "inherit",
+            },
+          }}
+        >
           <Content />
         </Box>
         <Box sx={{ flex: 1, maxWidth: "430px" }}>

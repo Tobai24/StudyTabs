@@ -22,6 +22,9 @@ const SignUp = () => {
         margin: "20px auto",
         height: "100vh",
         maxWidth: "430px",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
       }}
     >
       <Card

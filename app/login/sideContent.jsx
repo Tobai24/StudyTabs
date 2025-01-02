@@ -37,16 +37,6 @@ const items = [
 export default function Content() {
   return (
     <>
-      <Typography
-        variant="h6"
-        sx={{
-          fontWeight: "medium",
-          fontStyle: "italic",
-          color: "grey",
-        }}
-      >
-        StudyTabs
-      </Typography>
       <Stack
         sx={{
           flexDirection: "column",
@@ -55,6 +45,16 @@ export default function Content() {
           maxWidth: 450,
         }}
       >
+        <Typography
+          variant="h6"
+          sx={{
+            fontWeight: "medium",
+            fontStyle: "italic",
+            color: "grey",
+          }}
+        >
+          StudyTabs
+        </Typography>
         <Box sx={{ display: { xs: "none", md: "flex" } }}></Box>
         {items.map((item, index) => (
           <Stack key={index} direction="row" sx={{ gap: 2 }}>
