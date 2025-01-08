@@ -10,7 +10,7 @@ const SignInPage = () => {
   return (
     <Stack
       sx={{
-        backgroundImage: "url('/wave-haikei.svg')",
+        backgroundImage: "url('/layered-waves-haikei.svg')",
         backgroundSize: "cover",
         width: "100%",
       }}

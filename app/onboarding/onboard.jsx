@@ -71,7 +71,7 @@ const Onboarding = () => {
       justifyContent="center"
       sx={{
         height: "100vh",
-        backgroundImage: "url('/wave-haikei2.svg')",
+        backgroundImage: "url('/wave-haikeiP.svg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -107,7 +107,7 @@ const Onboarding = () => {
           justifyContent="center"
           sx={{
             height: "100vh",
-            backgroundImage: "url('/wave-haikei3.svg')",
+            backgroundImage: "url('/wave-haikeiP2.svg')",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
