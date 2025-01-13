@@ -8,13 +8,7 @@ import Onboarding from "../onboarding/onboard.jsx";
 
 const SignInPage = () => {
   return (
-    <Stack
-      sx={{
-        backgroundImage: "url('/layered-waves-haikei.svg')",
-        backgroundSize: "cover",
-        width: "100%",
-      }}
-    >
+    <Stack className="generic-background" sx={{ height: "100vh" }}>
       <Box
         sx={{
           display: "flex",
