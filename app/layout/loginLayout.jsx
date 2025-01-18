@@ -5,6 +5,7 @@ import SignIn from "../login/signin.jsx";
 import SignUp from "../login/signup.jsx";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Onboarding from "../onboarding/onboard.jsx";
+import CalendarApp from "../home/calender.jsx";
 
 const SignInPage = () => {
   return (
@@ -52,6 +53,9 @@ const LoginLayout = () => {
           <Route path="/signin" element={<SignInPage />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/onboarding" element={<Onboarding />} />
+        </Routes>
+        <Routes>
+          <Route path="/home" element={<CalendarApp />} />
         </Routes>
       </Router>
     </ThemeProvider>
